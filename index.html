@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Fuentes mejoradas -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cocksearch — Buscador de Cócteles</title>
+    <link rel="stylesheet" href="coctelito.css" />
+  </head>
+  <body>
+    <div class="background-pattern"></div>
+
+    <!--Título y botón de búsqueda en la barra superior-->
+    <header class="site-header">
+      <h1 class="site-title" tabindex="0">Cocksearch</h1>
+      <button class="search-button header-search">
+        Buscar Cóctel Aleatorio 🍹
+      </button>
+    </header>
+
+    <!--Letras grandes a un lado-->
+    <aside class="side-letters">
+      
+      </p>
+    </aside>
+
+    <!-- Estructura de 2 columnas (ya no necesitamos la columna del botón) -->
+    <div class="main-content">
+      <!-- Columna 1: Resultados de búsqueda -->
+      <div class="results-column">
+        <h2 class="column-title">Resultados</h2>
+        <div id="results-container" class="scroll-container"></div>
+      </div>
+
+      <!-- Columna 2: Favoritos -->
+      <div class="favorites-column">
+        <h2 class="column-title">Mis Favoritos ⭐</h2>
+        <div id="favorites-container" class="scroll-container"></div>
+      </div>
+    </div>
+
+    <script src="coctelito.js"></script>
+  </body>
+</html>
